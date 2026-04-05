@@ -1,0 +1,50 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.summaryCard { position: relative; overflow: hidden; }
+
+.cardGlow {
+  position: absolute;
+  top: -12px; right: -12px;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cardIcon { font-size: 20px; margin-bottom: 10px; }
+.cardLabel { color: var(--text-faint); font-size: 12px; margin-bottom: 6px; }
+.cardValue { font-size: 22px; font-weight: 800; letter-spacing: -1px; }
+.cardDelta { font-size: 11px; margin-top: 6px; }
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.chartCard { display: flex; flex-direction: column; gap: 10px; }
+
+.chartTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.chartFooter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.empty { color: var(--text-faint); font-size: 13px; padding: 16px 0; }
+
+@media (max-width: 700px) {
+  .chartsRow { grid-template-columns: 1fr; }
+}

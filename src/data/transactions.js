@@ -1,0 +1,41 @@
+export const INITIAL_TRANSACTIONS = [
+  { id: 1,  date: "2026-03-01", description: "Salary",           category: "Income",       amount: 85000, type: "income"  },
+  { id: 2,  date: "2026-03-02", description: "Rent",             category: "Housing",      amount: 22000, type: "expense" },
+  { id: 3,  date: "2026-03-04", description: "Grocery Store",    category: "Food",         amount: 3200,  type: "expense" },
+  { id: 4,  date: "2026-03-05", description: "Netflix",          category: "Entertainment",amount: 649,   type: "expense" },
+  { id: 5,  date: "2026-03-07", description: "Freelance Work",   category: "Income",       amount: 18000, type: "income"  },
+  { id: 6,  date: "2026-03-08", description: "Electricity Bill", category: "Utilities",    amount: 1850,  type: "expense" },
+  { id: 7,  date: "2026-03-10", description: "Restaurant",       category: "Food",         amount: 1400,  type: "expense" },
+  { id: 8,  date: "2026-03-12", description: "Gym Membership",   category: "Health",       amount: 999,   type: "expense" },
+  { id: 9,  date: "2026-03-14", description: "Amazon Purchase",  category: "Shopping",     amount: 4500,  type: "expense" },
+  { id: 10, date: "2026-03-15", description: "Bonus",            category: "Income",       amount: 12000, type: "income"  },
+  { id: 11, date: "2026-03-17", description: "Petrol",           category: "Transport",    amount: 2100,  type: "expense" },
+  { id: 12, date: "2026-03-18", description: "Dinner Out",       category: "Food",         amount: 2200,  type: "expense" },
+  { id: 13, date: "2026-03-20", description: "Internet Bill",    category: "Utilities",    amount: 999,   type: "expense" },
+  { id: 14, date: "2026-03-22", description: "Clothing",         category: "Shopping",     amount: 3800,  type: "expense" },
+  { id: 15, date: "2026-03-25", description: "Consulting Fee",   category: "Income",       amount: 9500,  type: "income"  },
+  { id: 16, date: "2026-03-26", description: "Medicine",         category: "Health",       amount: 780,   type: "expense" },
+  { id: 17, date: "2026-03-28", description: "Uber Rides",       category: "Transport",    amount: 1250,  type: "expense" },
+  { id: 18, date: "2026-03-30", description: "Streaming Bundle", category: "Entertainment",amount: 1299,  type: "expense" },
+  { id: 19, date: "2026-02-01", description: "Salary",           category: "Income",       amount: 85000, type: "income"  },
+  { id: 20, date: "2026-02-03", description: "Rent",             category: "Housing",      amount: 22000, type: "expense" },
+  { id: 21, date: "2026-02-05", description: "Grocery Store",    category: "Food",         amount: 2900,  type: "expense" },
+  { id: 22, date: "2026-02-10", description: "Freelance Work",   category: "Income",       amount: 14000, type: "income"  },
+  { id: 23, date: "2026-02-15", description: "Amazon Purchase",  category: "Shopping",     amount: 5500,  type: "expense" },
+  { id: 24, date: "2026-02-18", description: "Restaurant",       category: "Food",         amount: 1800,  type: "expense" },
+  { id: 25, date: "2026-02-22", description: "Electricity Bill", category: "Utilities",    amount: 1700,  type: "expense" },
+  { id: 26, date: "2026-02-25", description: "Petrol",           category: "Transport",    amount: 1950,  type: "expense" },
+];
+
+export const CATEGORIES = ["All", "Income", "Housing", "Food", "Entertainment", "Utilities", "Health", "Shopping", "Transport"];
+
+export const CATEGORY_COLORS = {
+  Housing:       "#6366f1",
+  Food:          "#f59e0b",
+  Entertainment: "#ec4899",
+  Utilities:     "#14b8a6",
+  Health:        "#22c55e",
+  Shopping:      "#f97316",
+  Transport:     "#3b82f6",
+  Income:        "#a3e635",
+};

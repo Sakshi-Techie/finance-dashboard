@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.svg { width: 140px; flex-shrink: 0; }
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legendLabel { color: var(--text-secondary); flex: 1; }
+.legendPct    { color: var(--text-primary); font-weight: 600; }
+
+.empty { color: var(--text-faint); font-size: 13px; padding: 16px 0; }

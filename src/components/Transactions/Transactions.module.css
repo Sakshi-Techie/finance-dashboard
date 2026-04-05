@@ -1,0 +1,71 @@
+.page { display: flex; flex-direction: column; gap: 16px; }
+
+.filterBar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search { flex: 1; min-width: 180px; }
+
+.count { color: var(--text-muted); font-size: 13px; margin-left: auto; }
+
+.tableWrap { overflow-x: auto; }
+
+.empty {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--text-faint);
+}
+.empty small { font-size: 12px; color: var(--text-muted); margin-top: 6px; display: block; }
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.deleteBtn:hover { opacity: 1; }
+
+.exportGroup {
+  display: flex;
+  gap: 6px;
+}
+
+.exportBtn {
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.exportBtn:hover:not(:disabled) {
+  background: var(--surface);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.exportBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.exportHint {
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 6px 4px;
+}
+.exportHint strong {
+  color: var(--text-secondary);
+}

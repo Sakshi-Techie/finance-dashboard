@@ -1,0 +1,64 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.kpiCard { display: flex; flex-direction: column; gap: 4px; }
+
+.kpiIcon { font-size: 26px; margin-bottom: 6px; }
+.kpiTitle { color: var(--text-faint); font-size: 12px; }
+.kpiValue { font-size: 26px; font-weight: 800; letter-spacing: -1px; margin-top: 2px; }
+.kpiSub   { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.bars { display: flex; flex-direction: column; gap: 14px; }
+
+.barRow { display: flex; flex-direction: column; gap: 5px; }
+
+.barMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.track {
+  height: 6px;
+  background: var(--surface);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.8s ease;
+  min-width: 4px;
+}
+
+.observations { display: flex; flex-direction: column; gap: 10px; }
+
+.obs {
+  background: var(--surface2);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.empty { color: var(--text-faint); font-size: 13px; }
+
+@media (max-width: 600px) {
+  .kpiGrid { grid-template-columns: 1fr 1fr; }
+}
